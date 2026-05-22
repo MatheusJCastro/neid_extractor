@@ -1,0 +1,28 @@
+[project]
+name = "neid_extractor"
+dynamic = ["version"]
+authors = [
+    { name="Matheus J. Castro" }
+]
+description="NeidExtractor: this library can deal with NEID spectrum files level 2."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers=[
+ "Programming Language :: Python :: 3.7",
+ "License :: OSI Approved :: MIT License",
+ "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "pathlib",
+    "astropy",
+    "PyAstronomy"
+]
+
+[project.urls]
+"repository" = "https://github.com/MatheusJCastro/neid_extractor"
+
+[tool.setuptools.dynamic]
+version = { attr = "neid_extractor.__version__" }

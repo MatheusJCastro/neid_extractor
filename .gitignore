@@ -1,0 +1,7 @@
+.venv
+.idea
+build
+neid_extractor.egg-info
+dist
+neid_extractor/__pycache__
+docs/_build
