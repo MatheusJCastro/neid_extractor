@@ -1,1 +1,3 @@
-from neid_extractor.get_neid import NeidExtractor,MultipleNeid
+from neid_extractor.__init__ import __version__
+
+print("NeidExtractor v{}".format(__version__))
