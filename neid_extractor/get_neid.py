@@ -354,21 +354,3 @@ class MultipleNeid:
 
         for obj in self.multi_data:
             obj.save_spec(fl_name=fl_name, delimiter=delimiter, fmt=fmt)
-
-
-if __name__ == "__main__":
-    flname = Path("../../GaiaDR3751738/neidL2_20250528T050024.fits")
-    dirname = Path("../../GaiaDR3751738")
-
-    # neid_ex = NeidExtractor(flname)
-    # print(len(neid_ex.fits[1].data))
-    # neid_ex.order = 101
-    # neid_ex.auto_make_spectrum()
-    # neid_ex.plot_spec()
-    # neid_ex.save_spec()
-
-    neid_multi = MultipleNeid(dirname)
-    neid_multi.order = 101
-    neid_multi.auto_make_all()
-    neid_multi.save_all()
-

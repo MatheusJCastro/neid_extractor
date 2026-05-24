@@ -1,1 +1,4 @@
-from neid_extractor.get_neid import NeidExtractor, MultipleNeid
+__version__ = "0.0.2"
+__author__ = "Matheus J. Castro"
+
+from neid_extractor.get_neid import NeidExtractor,MultipleNeid
